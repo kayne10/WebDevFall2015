@@ -4,5 +4,45 @@
 </head>
 <body>
 
+<h1>About me page</h1>
+
+<h2>About me page</h2>
+<h3>About me page</h3>
+
+<ul>
+	<li>list item 1</li>
+	<li>list item 2</li>
+</ul>
+
+<ol>
+	<li>list item 1</li>
+	<li>list item 2</li>
+	<li>list item 3</li>
+</ol>
+
+<form id="sayHi">
+	<input id="firstname" type="text" name="firstname">
+	<input type= "submit" value="Submit">
+</form>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$("#sayHi").on("submit", function (e) {
+
+
+			e.preventDefault();  //this prevents the page from refreshing after submitting
+			var firstName = $("#firstname").val();
+
+			alert("Hello, " + firstName);
+
+		});
+
+
+	});
+
+</script>
+
 </body>
 </html>
