@@ -1,0 +1,75 @@
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: url(../images/header_image.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 2cm 4cm 3cm 4cm;
+}
+
+#header img {
+	width:100%; 
+	height:500px;
+}
+
+#header h1 {
+	color: white;
+	font-size: 50px;
+	font-style: oblique;
+}
+#feature-section h4 {
+	color: white;
+
+}
+#box {
+	border: 1px solid #333;
+	padding: 15px;
+	height: 500px;
+
+}
+
+#box input, #box select {
+	display: block;
+	width: 100%;
+	margin: 10px 0 0 0;
+	background: teal;
+}
+
+p {
+	color: white;
+}
+
+li {
+	list-style-type: none;
+	color: white;
+}
+
+#content-section h4 {
+	color: white;
+}
+
+#content-section #box input, #box select {
+	color: black;
+}
+
+#content-section #box label {
+	color: white;
+}
+#smbox input {
+	color: white;
+	background: white;
+}
+
+#box h6 {
+	color: white;
+}
+
+#button input {
+	background: orange;
+	width: 200px;
+}
+

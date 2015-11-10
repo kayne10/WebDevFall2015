@@ -8,14 +8,12 @@ body {
 }
 
 html { 
-  background: url(../images/bg-code.jpg) no-repeat center center fixed;
+  background: url(../images/clouds.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-
 
 p {
 	font-size: 20px;
@@ -30,13 +28,6 @@ p {
 	margin: 0 auto;
 	background: rgba(0, 0, 0, .55);
 	box-shadow: 0 0 100px #020506;
-}
-
-.container {
-	margin: 0 auto;
-	background: rgba(0, 0, 0, 0);
-	box-shadow: 0 0 100px #020506;
-	padding:  50px;
 }
 
 h2 {
@@ -62,15 +53,6 @@ header {
 
 }
 
-header .my-image {
-	border: 25px solid rgba(100, 100, 100, .33);
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	position: relative;
-	margin: 50px auto;
-}
-
 header h1 {
 	font-size: 50px;
   	text-shadow: 3px 3px 0 rgba(41, 102, 127, .85);
@@ -78,11 +60,11 @@ header h1 {
 
 header img {
 	border-radius: 50%;
-	border: 10px solid rgba(77, 184, 229, .11);
+	border: 1px solid rgba(77, 184, 229, .33);
 	box-shadow: 0 0 100px #020506;
 	width: 250px;
 	opacity: .85;
-	margin: -10px 0 0 -10px;
+	margin-top: 50px;
 }
 
 
