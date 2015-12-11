@@ -1,0 +1,45 @@
+body {
+  background-color: #222930;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: #4EB1BA;
+	margin-top: -22px;
+}
+
+.header h1 {
+	font-family: courier;
+	margin-top: 20px;
+}
+
+.header a {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.record {
+	margin-top: 50px; 
+
+}
+#box {
+	border:2px solid #6cffe6;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+	font-family: courier;
+	color: #83e2cd;
+	height: 200px;
+	width: 200px;
+}
+
+#box a {
+	text-decoration: none;
+	color: #7aab51;
+}
+
+.container h1 {
+	font-family: courier;
+	font-weight: bold;
+	color: #49d4d3;
+}

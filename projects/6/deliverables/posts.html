@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>API</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+  <div class="container">
+	   <h1>JSON API POSTS Example</h1>
+    <div class="posts"></div>
+  </div>
+	
+
+  <script type="text/javascript">
+  var root = 'http://jsonplaceholder.typicode.com';
+  $.ajax({
+    url: root + '/posts/',
+    method: 'GET'
+  }).then(function(data) {
+    data.map(function(obj) {
+      var id = obj['id'];
+      var title = obj['title'];
+      var body = obj['body'];
+      
+      $('.posts').append('<div class="post" id="postId' + id + '"></div>')
+
+      $('#postId'+id).append('<div class="title"> <a href="post.html?id=' + id +'">' + title + '</a></div>')
+      $('#postId' +id).append('<div class="body">' + body + '</div>')
+      $('#postId' +id).append('<button class="remove" id="' + id + '">Remove</button>')
+
+     
+    })
+    removePost();
+  });
+
+  function removePost() {
+    $('.remove').on('click', function() {
+      
+      var postDiv = $(this).parent();
+      $(postDiv).slideUp();
+    })
+  }
+
+
+
+  </script>
+
+  </body>
+</html>

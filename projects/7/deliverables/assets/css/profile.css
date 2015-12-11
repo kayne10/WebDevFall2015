@@ -1,0 +1,43 @@
+body {
+  background-color: #222930;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: #4EB1BA;
+	margin-top: -22px;
+}
+
+.header h1 {
+	font-family: courier;
+	margin-top: 20px;
+}
+
+.header a {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.container {
+	font-size: 30px;
+	font-family: courier;
+	font-weight: bold;
+	color: #97f7e0;
+	margin-top: 10px;
+	padding-bottom: 30px;
+
+}
+
+img {
+	padding-top: 30px;
+	height: 300px;
+	width: 300px;
+}
+
+
+#info {
+	font-size: 25px;
+	font-family: courier;
+
+}

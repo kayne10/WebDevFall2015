@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Results</title>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+    <script type='text/javascript' src="assets/js/script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/search.css">
+</head>
+<body>
+	<div class="header"><h1>Phonebook App</h1>
+		<a href="index.html">Return to Homepage</a>
+	</div>
+	<div class="container">
+		<h1>Results</h1>
+		<div class="record"></div>
+
+
+	</div>
+
+
+  <script type="text/javascript">
+  var searchText = window.location.search.replace('?name=','');
+
+  $.ajax({
+    url: 'api/v1/phonebook/data.json',
+    method: 'GET'
+  }).then(function(data) {
+    data.filter(function(r){
+    	return r.first_name.toLowerCase() === searchText.toLowerCase();
+    }).map(function(row) {
+      var profile = row['profile_pic']
+      var first_name = row['first_name']
+      var last_name = row['last_name']
+      var email = row['email']
+      var phone = row['phone']
+      var address = row['address']
+      var id = row['id']
+      $('.record').append('<div id="box">'+first_name + ' ' + last_name + '<br>'+ email + '<br>' + phone + '<br>' + address + '<br><img src="'+profile+'"><br><a href="profile.html?id='+ id + '">Go to Profile</a><br></div>')
+      
+      
+    })
+  });
+  </script>
+
+
+
+</body>
+</html>

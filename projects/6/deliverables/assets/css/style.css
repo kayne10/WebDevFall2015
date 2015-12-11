@@ -1,0 +1,28 @@
+body {
+	background: orange;
+}
+
+.container {
+	width: 760px;
+	margin: 0 auto;
+	border-style: solid;
+}
+
+
+.title {
+	font-size: 28px;
+	padding-top: 20px;
+	border-style: dotted;
+
+}
+
+
+.post {
+	
+}
+
+.body {
+	font-size: 17px;
+	text-indent: 15px;
+
+}
